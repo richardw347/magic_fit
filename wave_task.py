@@ -47,7 +47,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
             wave_performance,
         ) = analyser(landmarks, image.shape[1], image.shape[0])
 
-        print(wave_count, wave_percentage)
+        print(f"Wave count: {wave_count}, wave percentage: {wave_percentage}%")
 
         if VISUALISE:
 

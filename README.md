@@ -41,6 +41,11 @@ To calculate the wave percentage I decided to define what an ideal wave would be
 
 I chose this simple calculation method as all the necessary calculations are extremely fast and have minimal dependencies. I think the joint angle features approach works well for this and many other exercises, I'd only add some additional features such as relative distances between joints where those are relevant for particular exercises.
 
+Screen recodings of the output can be found here:
+
+1. [magicfit_console_recording.mp4](magicfit_console_recording.mp4)
+2. [magicfit_full_recording.mp4](magicfit_full_recording.mp4)
+
 ## Solution Detailed Description
 
 The MediaPipe Pose algorithm extracts 33 pose landmarks, from these landmarks we need to determine what constitutes a wave action.

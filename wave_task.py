@@ -4,8 +4,8 @@ import numpy as np
 from landmark_analyser import LandmarkAnalyser
 from utils import draw_text_on_img, WaveState, CV2TextColors
 
-VIDEO_FILE = "video/A.mp4"
-# VIDEO_FILE = "video/B.mp4"
+# VIDEO_FILE = "video/A.mp4"
+VIDEO_FILE = "video/B.mp4"
 VISUALISE = True
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles

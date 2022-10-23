@@ -4,6 +4,12 @@ from typing import List
 from enum import Enum
 
 
+class CV2TextColors(Enum):
+    RED = (0, 0, 255)
+    GREEN = (0, 255, 0)
+    YELLOW = (0, 255, 255)
+
+
 class WaveState(Enum):
     WAVE_INIT = 0
     WAVE_STARTED = 1
@@ -34,14 +40,14 @@ def calc_angle(j1: List, j2: List, j3: List):
     return angle_deg
 
 
-def draw_text_on_img(text, origin, scale, image):
+def draw_text_on_img(text, origin, scale, image, color=CV2TextColors.YELLOW):
     cv2.putText(
         img=image,
         text=text,
         org=origin,
         fontFace=cv2.FONT_HERSHEY_SIMPLEX,
         fontScale=scale,
-        color=(255, 255, 0),
+        color=color.value,
         thickness=2,
     )
     return image

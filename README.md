@@ -1,4 +1,4 @@
-# Magic Fit Wave Analysis Task
+# Wave Analysis Challenge
 
 This repository contains the code to solve a simple exercise involving the analysis of a person waving a number of times. The aim is to produce a function that given the pose data extracted by the MediaPipe Pose library will return:
 
